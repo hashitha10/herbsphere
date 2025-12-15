@@ -20,6 +20,14 @@ export const getPlantsBySystem = async (system) => {
   return response.data;
 };
 
+// Search plants (optional; backend supports /search)
+export const searchPlants = async (query) => {
+  const response = await axios.get(`${API_BASE_URL}/search`, {
+    params: { q: query },
+  });
+  return response.data;
+};
+
 // Create new plant (Admin)
 export const createPlant = async (plantData) => {
   const response = await axios.post(API_BASE_URL, plantData);

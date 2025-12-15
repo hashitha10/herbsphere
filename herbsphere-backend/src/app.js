@@ -3,6 +3,7 @@ const cors = require("cors");
 
 const connectDB = require("./config/db");
 const plantRoutes = require("./routes/plantRoutes");
+const quizRoutes = require("./routes/quizRoutes");
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/plants", plantRoutes);
+app.use("/api/quiz", quizRoutes);
 
 // Base test route
 app.get("/", (req, res) => {

@@ -17,6 +17,16 @@ const plantSchema = new mongoose.Schema(
       required: true,
       enum: ["Ayurveda", "Unani", "Siddha", "Homeopathy", "Yoga"],
     },
+
+    // normalized API fields requested by client
+    name: {
+      type: String,
+      trim: true,
+    },
+    system: {
+      type: String,
+      trim: true,
+    },
     family: {
       type: String,
     },
@@ -29,10 +39,22 @@ const plantSchema = new mongoose.Schema(
     imageUrl: {
       type: String,
     },
+    image: {
+      type: String,
+    },
     audioUrl: {
       type: String,
     },
+    audioPath: {
+      type: String,
+    },
+    audioText: {
+      type: String,
+    },
     model3DUrl: {
+      type: String,
+    },
+    modelPath: {
       type: String,
     },
   },

@@ -3,6 +3,7 @@ const router = express.Router();
 const {
   getAllPlants,
   getPlantById,
+  searchPlants,
   getPlantsBySystem,
   createPlant,
   updatePlant,
@@ -11,6 +12,7 @@ const {
 
 
 router.get("/", getAllPlants);
+router.get("/search", searchPlants);
 
 // GET plant by ID
 router.get("/:id", getPlantById);

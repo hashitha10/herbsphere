@@ -1,21 +1,36 @@
-import React from 'react';
+import React from "react";
 
 export default function PlantInfoPanel({ plant, onClose }) {
   if (!plant) return null;
 
+  const hasModel = Boolean(plant.model);
+
   return (
-    <div className="fixed right-6 bottom-6 w-96 bg-white rounded-lg shadow-lg p-4 z-50">
-      <div className="flex justify-between items-start">
+    <aside className="fixed right-4 bottom-4 w-96 max-w-full bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-4 z-50 border border-emerald-100">
+      <div className="flex justify-between items-start gap-3">
         <div>
-          <h3 className="text-xl font-bold">{plant.commonName}</h3>
-          <p className="text-sm italic text-gray-600">{plant.scientificName}</p>
-          <p className="text-xs text-gray-500 mt-1">{plant.short}</p>
+          <h3 className="text-lg font-semibold text-emerald-900">
+            {plant.commonName}
+          </h3>
+          <p className="text-xs italic text-gray-600">
+            {plant.scientificName}
+          </p>
+          {plant.short && (
+            <p className="text-[0.75rem] text-gray-600 mt-1 leading-relaxed line-clamp-3">
+              {plant.short}
+            </p>
+          )}
         </div>
-        <button className="text-gray-500" onClick={onClose}>✕</button>
+        <button
+          className="text-gray-500 text-sm hover:text-gray-700 rounded-full px-2 py-1 hover:bg-gray-100"
+          onClick={onClose}
+        >
+          ✕
+        </button>
       </div>
 
-      {plant.model ? (
-        <div className="mt-3 rounded overflow-hidden border">
+      <div className="mt-3 rounded-xl overflow-hidden border border-emerald-100 bg-emerald-50/60 flex items-center justify-center">
+        {hasModel ? (
           <model-viewer
             src={plant.model}
             ios-src={plant.usdz}
@@ -24,18 +39,30 @@ export default function PlantInfoPanel({ plant, onClose }) {
             ar-modes="webxr scene-viewer quick-look"
             camera-controls
             auto-rotate
-            style={{ width: '100%', height: '260px' }}
+            style={{ width: "100%", height: "240px" }}
           />
-        </div>
-      ) : (
-        <img loading="lazy" src={`${plant.image}?w=800&q=80`} alt={plant.commonName} className="w-full h-40 object-cover rounded mt-3" />
+        ) : (
+          <img
+            loading="lazy"
+            src={plant.image}
+            alt={plant.commonName}
+            className="w-full h-40 object-cover"
+          />
+        )}
+      </div>
+
+      {plant.description && (
+        <p className="mt-3 text-[0.8rem] text-gray-700 leading-relaxed">
+          {plant.description}
+        </p>
       )}
 
-      <p className="mt-3 text-sm text-gray-700">{plant.description}</p>
-
-      <div className="mt-3 text-sm">
-        <strong>Uses:</strong> {plant.uses?.join(', ')}
-      </div>
-    </div>
+      {Array.isArray(plant.uses) && plant.uses.length > 0 && (
+        <div className="mt-3 text-[0.78rem] text-gray-700">
+          <span className="font-semibold text-emerald-900">Key uses:</span>{" "}
+          {plant.uses.join(", ")}
+        </div>
+      )}
+    </aside>
   );
 }
