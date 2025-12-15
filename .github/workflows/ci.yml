@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - 'finalize/*'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium
+
+      - name: Lint code
+        run: npm run lint
+
+      - name: Run CI checks (mapping/metadata validations)
+        run: node ./scripts/ci-checks.js
+
+      - name: Run build
+        run: npm run build
+
+      - name: Run duplicate-report
+        run: node ./scripts/report-duplicates.js
+
+      - name: Upload model-sources.json as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-sources.json
+          path: public/models/model-sources.json

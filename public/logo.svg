@@ -1,0 +1,47 @@
+<!-- save as public/logo.svg and public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="1000" height="1000">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#00C2FF"/>
+      <stop offset="0.55" stop-color="#00A6D6"/>
+      <stop offset="1" stop-color="#0066CC"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="40%" cy="35%" r="80%">
+      <stop offset="0" stop-color="#9FF7E5" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#00D1B2" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#0066CC" stop-opacity="0.95"/>
+    </radialGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#005aa3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- sphere -->
+  <g filter="url(#shadow)">
+    <circle cx="300" cy="300" r="220" fill="url(#r1)" />
+  </g>
+
+  <!-- glossy highlight -->
+  <path d="M160,150 C230,80 370,70 440,140 C410,110 360,95 300,100 C240,105 190,130 160,150Z"
+        fill="rgba(255,255,255,0.18)"/>
+
+  <!-- stylized leaf (front) -->
+  <path d="M320 190 C420 210 460 320 360 370 C300 400 260 380 220 340 C200 320 210 260 260 230 C290 210 300 200 320 190 Z"
+        fill="#7BE495" transform="translate(10,6) rotate(-8 300 300)"/>
+
+  <!-- leaf vein -->
+  <path d="M330 200 C360 230 400 300 360 350" stroke="#ffffff80" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- small tech nodes -->
+  <g fill="#00F0FF" opacity="0.85">
+    <circle cx="430" cy="120" r="6"/>
+    <circle cx="480" cy="210" r="4"/>
+    <circle cx="140" cy="250" r="3"/>
+  </g>
+
+  <!-- wordmark (optional, remove if using small favicon) -->
+  <g transform="translate(0,520)">
+    <text x="50%" y="50" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="36" fill="#062D3B" letter-spacing="0.5">HerbSphere</text>
+    <text x="50%" y="92" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="20" fill="#0066CC">Immersive 3D Herbal Learning</text>
+  </g>
+</svg>

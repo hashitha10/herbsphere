@@ -1,0 +1,224 @@
+{
+  "mint.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/9vNmQKqqs7Z",
+      "https://poly.pizza/m/VtJh4Irl4w",
+      "https://poly.pizza/m/Kr4kr7OCCQ"
+    ],
+    "license": "CC0 (Poly/Quaternius candidate)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "lemongrass.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/etkjGJtQYHh",
+      "https://poly.pizza/m/4X6q_p2KEY9"
+    ],
+    "license": "CC0 (Quaternius candidate)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "brahmi.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/s0joFFrQoy",
+      "https://poly.pizza/m/IBLX2Jz90O"
+    ],
+    "license": "CC0 (Quaternius candidate)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "lemonbalm.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/GJ3Bm5FDE4"
+    ],
+    "license": "CC0",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "gotu-kola.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/GJ3Bm5FDE4",
+      "https://poly.pizza/m/2q-hEEe3Njb"
+    ],
+    "license": "CC0",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "thuthuvalai.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://sketchfab.com/search?q=Solanum%20trilobatum"
+    ],
+    "license": "TBD (Sketchfab candidates)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "moringa.glb": {
+    "src": [
+      "https://poly.pizza/m/etFGNvsiFv",
+      "https://poly.pizza/m/c8JyH5R-PFc",
+      "https://poly.pizza/m/69RRT82WatB"
+    ],
+    "license": "CC0 (Quaternius candidate)",
+    "note": " Added fallback candidate: https://poly.pizza/m/etFGNvsiFv",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/etFGNvsiFv",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/etFGNvsiFv"
+  },
+  "senna.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/5COCzyz489J",
+      "https://poly.pizza/m/0ASWNpT1YEP"
+    ],
+    "license": "TBD (generic shrub assets)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "amla.glb": {
+    "src": [
+      "https://poly.pizza/m/etFGNvsiFv",
+      "https://poly.pizza/m/dYqoTOPqeas",
+      "https://poly.pizza/m/d6D5lm3va2N"
+    ],
+    "license": "CC0 (tree candidate)",
+    "note": " Added fallback candidate: https://poly.pizza/m/etFGNvsiFv",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/etFGNvsiFv",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/etFGNvsiFv"
+  },
+  "belladonna.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/2ag6_uuqsnb",
+      "https://poly.pizza/m/9muifDB1NCE"
+    ],
+    "license": "CC0 (Quaternius candidate)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "nuxvomica.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/7ig0HcyfT93",
+      "https://poly.pizza/m/MbhbP7JrTI"
+    ],
+    "license": "CC0",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "chamomile.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/jqcanvH7D6",
+      "https://poly.pizza/m/2q-hEEe3Njb"
+    ],
+    "license": "CC0 (Quaternius/Kenney)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "adathoda.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/9YCWTMzIDj5",
+      "https://poly.pizza/m/5EfsdpXCiD"
+    ],
+    "license": "CC0",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  },
+  "ashwagandha.glb": {
+    "src": [
+      "https://poly.pizza/m/bfLOqIV5uP",
+      "https://poly.pizza/m/6V3TWTOBHwL",
+      "https://poly.pizza/m/GVTsMmuzv7"
+    ],
+    "license": "CC0 (approx)",
+    "note": " Added fallback candidate: https://poly.pizza/m/bfLOqIV5uP",
+    "final": true,
+    "finalSource": "https://poly.pizza/m/bfLOqIV5uP",
+    "finalLicense": "CC0 (Quaternius fallback)",
+    "finalizedOn": "2025-12-13",
+    "finalizedBy": "User (accepted Quaternius fallback)",
+    "sha256": "14af7bdd6fb0c08536fbf1d9fcd251e4a0c81b46a2d42b9aa0911a5f05ba4a3f",
+    "resolved": "https://poly.pizza/m/bfLOqIV5uP"
+  }
+}
