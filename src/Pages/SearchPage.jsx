@@ -1,42 +1,13 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { PLANTS } from "../data/plants";
-import { getAllPlants } from "../services/plantService";
 
 export default function SearchPage() {
   const [query, setQuery] = useState("");
-  const [allPlants, setAllPlants] = useState(PLANTS);
-  const [status, setStatus] = useState("idle"); // idle | loading | ready | fallback | error
-
-  useEffect(() => {
-    let cancelled = false;
-    async function load() {
-      try {
-        setStatus("loading");
-        const remote = await getAllPlants();
-        if (!cancelled && Array.isArray(remote) && remote.length > 0) {
-          setAllPlants(remote);
-          setStatus("ready");
-        } else if (!cancelled) {
-          setStatus("fallback");
-        }
-      } catch {
-        if (!cancelled) {
-          // fall back to bundled PLANTS
-          setAllPlants(PLANTS);
-          setStatus("fallback");
-        }
-      }
-    }
-    load();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return allPlants;
-    return allPlants.filter((p) => {
+    if (!q) return PLANTS;
+    return PLANTS.filter((p) => {
       const systems = (p.systems || []).join(" ").toLowerCase();
       return (
         (p.commonName || "").toLowerCase().includes(q) ||
@@ -45,7 +16,7 @@ export default function SearchPage() {
         systems.includes(q)
       );
     });
-  }, [query, allPlants]);
+  }, [query]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-emerald-50 py-8 px-4 sm:px-6 lg:px-8">
@@ -67,9 +38,7 @@ export default function SearchPage() {
             onChange={(e) => setQuery(e.target.value)}
           />
           <span className="text-[0.7rem] text-gray-500 px-2 py-1 rounded-full bg-gray-100 border border-gray-200">
-            {status === "loading"
-              ? "Loading…"
-              : `${filtered.length} result${filtered.length === 1 ? "" : "s"}`}
+            {filtered.length} result{filtered.length === 1 ? "" : "s"}
           </span>
         </div>
 
@@ -118,12 +87,6 @@ export default function SearchPage() {
         {filtered.length === 0 && (
           <p className="mt-10 text-center text-sm text-gray-500">
             No plants match this query. Try searching by another system or common name.
-          </p>
-        )}
-
-        {status === "fallback" && (
-          <p className="mt-4 text-center text-[0.7rem] text-gray-400">
-            Offline mode: showing bundled plant data because the backend is not reachable.
           </p>
         )}
       </div>

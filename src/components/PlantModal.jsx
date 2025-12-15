@@ -267,7 +267,7 @@ export default function PlantModal({
               )}
             </div>
 
-            {/* audio + transcript block – always visible text, conditional audio */}
+            {/* audio + transcript block – transcript only while audio is playing */}
             <div className="mt-4 border rounded-md p-3 bg-emerald-50/60 border-emerald-100">
               <div className="flex items-center justify-between gap-3">
                 <div>
@@ -319,7 +319,7 @@ export default function PlantModal({
                 />
               )}
 
-              {transcript && (
+              {hasAudio && isPlaying && transcript && (
                 <p className="mt-3 text-[0.82rem] leading-relaxed text-emerald-950/80 bg-white/60 rounded-md px-3 py-2 border border-emerald-100">
                   {transcript}
                 </p>

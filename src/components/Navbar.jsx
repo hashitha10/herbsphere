@@ -11,7 +11,7 @@ export default function Navbar() {
           {/* Brand */}
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/herbsphere-logo.png"
+              src="/logo.svg"
               className="w-9 h-9 rounded-full bg-white/10 border border-emerald-500 object-contain"
               alt="HerbSphere logo"
             />
@@ -37,7 +37,13 @@ export default function Navbar() {
               to="/ayush"
               className="hover:text-emerald-200 transition-colors"
             >
-              AYUSH Dashboard
+              Systems
+            </Link>
+            <Link
+              to="/ayush"
+              className="hover:text-emerald-200 transition-colors"
+            >
+              3D Explorer
             </Link>
             <Link
               to="/search"
@@ -45,13 +51,12 @@ export default function Navbar() {
             >
               Search
             </Link>
-
-            <button
-              onClick={() => alert("Quiz will be added soon 🚀")}
-              className="px-4 py-1.5 rounded-full bg-amber-300 text-emerald-950 text-xs font-semibold shadow-sm hover:bg-amber-200 transition-colors"
+            <a
+              href="#about"
+              className="hover:text-emerald-200 transition-colors"
             >
-              Take Quiz
-            </button>
+              About
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -104,7 +109,14 @@ export default function Navbar() {
               className="block px-3 py-1.5 rounded-md hover:bg-emerald-800/80"
               onClick={() => setOpen(false)}
             >
-              AYUSH Dashboard
+              Systems
+            </Link>
+            <Link
+              to="/ayush"
+              className="block px-3 py-1.5 rounded-md hover:bg-emerald-800/80"
+              onClick={() => setOpen(false)}
+            >
+              3D Explorer
             </Link>
             <Link
               to="/search"
@@ -113,15 +125,13 @@ export default function Navbar() {
             >
               Search
             </Link>
-            <button
-              onClick={() => {
-                setOpen(false);
-                alert("Quiz will be added soon 🚀");
-              }}
-              className="mt-1 w-full text-left px-3 py-1.5 rounded-md bg-amber-300 text-emerald-950 text-xs font-semibold"
+            <a
+              href="#about"
+              className="block px-3 py-1.5 rounded-md hover:bg-emerald-800/80"
+              onClick={() => setOpen(false)}
             >
-              Take Quiz
-            </button>
+              About
+            </a>
           </div>
         </div>
       )}
