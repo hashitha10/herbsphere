@@ -11,6 +11,8 @@ export const PLANTS = [
     "Ayurveda",
     "Homeopathy"
   ],
+
+  
   family: "Lamiaceae",
   uses: [
     "Boosts immunity",
