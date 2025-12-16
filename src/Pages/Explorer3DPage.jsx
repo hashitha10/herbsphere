@@ -96,6 +96,9 @@ export default function Explorer3DPage() {
                   <p className="text-xs italic text-gray-600">
                     {plant.scientificName}
                   </p>
+                  <p className="text-[0.65rem] text-emerald-800 mt-1">
+                    3D view available — representative educational model.
+                  </p>
                 </div>
               </button>
             ))}
@@ -113,4 +116,5 @@ export default function Explorer3DPage() {
     </div>
   );
 }
+
 

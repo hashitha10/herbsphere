@@ -58,6 +58,54 @@ export default function AboutPage() {
 
           <section>
             <h2 className="text-2xl font-semibold text-emerald-900 mb-3">
+              AYUSH System Learning Overview
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Use this guide to choose the right system to study or discuss during viva. Match the
+              context (wellness vs. condition) to the system that excels there.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-800">
+              <div className="space-y-2">
+                <h3 className="text-emerald-900 font-semibold">When to choose</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li><strong>Ayurveda:</strong> Lifestyle balance, digestion, immunity, stress adaptation.</li>
+                  <li><strong>Yoga &amp; Naturopathy:</strong> Mind-body fitness, breathing, sleep, metabolic reset.</li>
+                  <li><strong>Unani:</strong> Temperament-based care, respiratory comfort, digestive tonics.</li>
+                  <li><strong>Siddha:</strong> Traditional Tamil formulations, respiratory support, rejuvenation.</li>
+                  <li><strong>Homeopathy:</strong> Micro-dosed remedies for individualized symptom patterns.</li>
+                </ul>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-emerald-900 font-semibold">Example use cases</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li><strong>Digestion &amp; appetite:</strong> Ayurveda or Unani approaches.</li>
+                  <li><strong>Immunity &amp; resilience:</strong> Ayurveda, Siddha tonics, or Yoga lifestyle.</li>
+                  <li><strong>Stress, sleep, mood:</strong> Yoga &amp; Naturopathy; Homeopathy for tailored symptoms.</li>
+                  <li><strong>Respiratory comfort:</strong> Unani or Siddha traditional support paths.</li>
+                  <li><strong>Lifestyle disorders (mild):</strong> Ayurveda (diet/ritucharya) + Yoga (asanas/pranayama).</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 mt-3">
+              Tip for viva: Start with the person’s goal (e.g., better sleep, lighter digestion, calm breathing)
+              and map it to the system known for that focus. Avoid plant-level detail here; the plant cards already
+              provide specifics.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-emerald-900 mb-3">
+              3D Visualization in HerbSphere 3D
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              3D models in this project are representative educational visualizations. They help students
+              explore shape, volume, and spatial context interactively. Botanical accuracy may vary, and models
+              can be upgraded in future versions. Treat the models as learning aids—not diagnostic references.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-emerald-900 mb-3">
               Key Features
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -142,4 +190,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
 

@@ -40,7 +40,7 @@ export default function Navbar() {
               Systems
             </Link>
             <Link
-              to="/ayush"
+              to="/explorer"
               className="hover:text-emerald-200 transition-colors"
             >
               3D Explorer
@@ -51,12 +51,12 @@ export default function Navbar() {
             >
               Search
             </Link>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="hover:text-emerald-200 transition-colors"
             >
               About
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -112,7 +112,7 @@ export default function Navbar() {
               Systems
             </Link>
             <Link
-              to="/ayush"
+              to="/explorer"
               className="block px-3 py-1.5 rounded-md hover:bg-emerald-800/80"
               onClick={() => setOpen(false)}
             >
@@ -125,13 +125,13 @@ export default function Navbar() {
             >
               Search
             </Link>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="block px-3 py-1.5 rounded-md hover:bg-emerald-800/80"
               onClick={() => setOpen(false)}
             >
               About
-            </a>
+            </Link>
           </div>
         </div>
       )}

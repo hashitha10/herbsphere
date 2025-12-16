@@ -344,15 +344,20 @@ export default function PlantModal({
                   <p className="mt-1 text-red-600/80">{modelError}</p>
                 </div>
               ) : viewerSrc ? (
-                <model-viewer
-                  src={viewerSrc}
-                  camera-controls
-                  auto-rotate
-                  shadow-intensity="0.9"
-                  exposure="1"
-                  alt={plant.commonName}
-                  style={{ width: "100%", height: "100%" }}
-                />
+                <div className="relative w-full h-full">
+                  <model-viewer
+                    src={viewerSrc}
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="0.9"
+                    exposure="1"
+                    alt={plant.commonName}
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                  <div className="absolute bottom-2 right-2 text-[0.65rem] text-emerald-900 bg-white/85 border border-emerald-100 rounded px-2 py-1 shadow-sm">
+                    This 3D visualization is a representative educational model.
+                  </div>
+                </div>
               ) : (
                 <div className="flex flex-col items-center gap-2 text-gray-600 text-sm">
                   <img

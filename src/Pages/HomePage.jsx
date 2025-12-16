@@ -26,7 +26,7 @@ export default function HomePage({ onPlantClick }) {
           {/* CTA BUTTONS */}
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             <Link
-              to="/ayush"
+              to="/explorer"
               className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-white text-emerald-900 text-sm sm:text-base font-semibold shadow-md hover:bg-emerald-50 transition-colors"
             >
               🌿 Explore 3D Herbal Garden

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { PLANTS } from "../data/plants";
 
-export default function SearchPage() {
+export default function SearchPage({ onPlantClick }) {
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
@@ -46,7 +46,8 @@ export default function SearchPage() {
           {filtered.map((p) => (
             <article
               key={p.id}
-              className="bg-white/95 rounded-2xl shadow-sm border border-emerald-100 overflow-hidden flex flex-col hover:shadow-lg transition"
+              onClick={() => onPlantClick && onPlantClick(p)}
+              className="bg-white/95 rounded-2xl shadow-sm border border-emerald-100 overflow-hidden flex flex-col hover:shadow-lg transition cursor-pointer"
             >
               <div className="h-36 overflow-hidden">
                 <img
