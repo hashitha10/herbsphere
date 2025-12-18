@@ -1,22 +1,23 @@
 import React from "react";
 
-export default function PlantCard({ title, desc, image }) {
+// PlantCard expects a full `plant` object and renders a safe card.
+// Layout and styling are unchanged.
+export default function PlantCard({ plant }) {
+  if (!plant || !plant.image) return null;
+
+  const title = plant.commonName || plant.name || "Unknown plant";
+  const desc = plant.short || plant.scientificName || "";
+  const image = plant.image;
+
   return (
     <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition">
-      
-      {/* IMAGE (SAFE FALLBACK) */}
+      {/* IMAGE */}
       <div className="h-32 bg-green-100 rounded-md flex items-center justify-center mb-4">
-        {image ? (
-          <img
-            src={image}
-            alt={title}
-            className="h-full object-contain"
-          />
-        ) : (
-          <span className="text-green-700 font-semibold">
-            🌿 {title}
-          </span>
-        )}
+        <img
+          src={image}
+          alt={title}
+          className="h-full object-contain"
+        />
       </div>
 
       {/* TEXT */}

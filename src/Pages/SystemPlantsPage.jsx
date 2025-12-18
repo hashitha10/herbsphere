@@ -2,13 +2,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { PLANTS } from "../data/plants";
+import PlantCard from "../components/PlantCard";
 
 export default function SystemPlantsPage({ onPlantSelect }) {
   const { name } = useParams();
 
   // Filter plants based on system name
-  const list = PLANTS.filter(p =>
-    p.systems.map(s => s.toLowerCase()).includes(name.toLowerCase())
+  const list = PLANTS.filter((p) =>
+    p.systems.map((s) => s.toLowerCase()).includes(name.toLowerCase())
   );
 
   return (
@@ -21,18 +22,15 @@ export default function SystemPlantsPage({ onPlantSelect }) {
         <p className="text-red-600 text-xl">No plants found in PLANTS data.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {list.map(plant => (
-            <div
+          {list.map((plant) => (
+            <button
               key={plant.id}
+              type="button"
               onClick={() => onPlantSelect(plant)}
-              className="cursor-pointer rounded-xl shadow-lg bg-white hover:shadow-xl transition"
+              className="text-left"
             >
-              <img src={plant.image} alt={plant.commonName} className="w-full h-48 object-cover" />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold">{plant.commonName}</h3>
-                <p className="text-gray-600">{plant.scientificName}</p>
-              </div>
-            </div>
+              <PlantCard plant={plant} />
+            </button>
           ))}
         </div>
       )}

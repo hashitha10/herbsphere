@@ -1,5 +1,6 @@
 import React from "react";
 import { PLANTS } from "../../data/plants";
+import PlantCard from "../../components/PlantCard";
 
 export default function AyurvedaPage({ onPlantClick }) {
   const ayurvedaPlants = PLANTS.filter((p) =>
@@ -14,22 +15,14 @@ export default function AyurvedaPage({ onPlantClick }) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {ayurvedaPlants.map((plant) => (
-          <div
+          <button
             key={plant.id}
+            type="button"
             onClick={() => onPlantClick(plant)}
-            className="bg-white rounded-xl shadow p-4 cursor-pointer hover:shadow-lg transition"
+            className="text-left"
           >
-            <img
-              src={plant.image}
-              className="w-full h-56 object-cover rounded-lg"
-              alt={plant.commonName}
-            />
-            <h2 className="text-xl font-bold mt-3">{plant.commonName}</h2>
-            <p className="italic text-gray-600">{plant.scientificName}</p>
-            <p className="text-sm text-gray-700 mt-2">
-              <strong>Uses:</strong> {plant.uses[0]}...
-            </p>
-          </div>
+            <PlantCard plant={plant} />
+          </button>
         ))}
       </div>
     </div>

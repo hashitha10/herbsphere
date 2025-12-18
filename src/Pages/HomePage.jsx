@@ -45,12 +45,7 @@ export default function HomePage({ onPlantClick }) {
       {/* FOOTER */}
       <footer className="border-t border-emerald-100 bg-white/90">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-[0.7rem] text-gray-500">
-            © 2025 HerbSphere 3D — Virtual Herbal Garden for AYUSH education.
-          </p>
-          <p className="text-[0.7rem] text-gray-400">
-            Built with React, Vite, Tailwind CSS and @google/model-viewer.
-          </p>
+          {/* footer text intentionally minimal for final submission */}
         </div>
       </footer>
     </div>
